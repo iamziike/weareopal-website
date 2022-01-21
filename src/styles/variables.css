@@ -1,0 +1,44 @@
+:root {
+  /* colors */
+  --light-black: hsl(220, 13%, 18%);
+  --black: hsl(0, 0%, 0%);
+  --green-yellow: hsl(72, 98%, 50%);
+  --white: hsl(0, 0%, 100%);
+  --gray: hsl(223, 19%, 71%);
+  --dark-gray: hsl(223, 19%, 61%);
+  --red: hsl(0, 60%, 50%);
+
+  /* themes sync */
+  --main-bg: var(--black);
+  --main-color: var(--white);
+  --main-color2: var(--red);
+  --cursor-color: var(--main-color2);
+
+  --highlight-color: var(--main-color2);
+  --highlight-negative: var(--main-bg);
+
+  --alt-bg: var(--gray);
+  --alt-negative: var(--main-color2);
+  --alt-negative2: var(--main-bg);
+
+  /* layout */
+  --default-padding-vertical: 40px;
+  --default-padding-horizontal: 100px;
+
+  /* font */
+  --default-font-light: NeueMachina-Light, 'Courier New', sans-serif;
+  --default-font-reg: NeueMachina-Regular, 'Courier New', sans-serif;
+  --default-font-bold: NeueMachina-Bold, 'Courier New', sans-serif;
+
+  /*font-size */
+  --fs-small: 1rem;
+  --fs-reg: 1.2rem;
+  --fs-medium: 3.5rem;
+}
+
+@media (max-width: 800px) {
+  :root {
+    --default-padding-vertical: 20px;
+    --default-padding-horizontal: 50px;
+  }
+}

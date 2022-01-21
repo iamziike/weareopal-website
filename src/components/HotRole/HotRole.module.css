@@ -1,0 +1,176 @@
+.hot-role {
+  --hot-role-gap: 5px;
+  --hot-role-padding: calc(var(--default-padding-horizontal) / 2);
+  --hot-role-type-fs: 5rem;
+  --animated-text-fs: 1.5rem;
+
+  display: grid;
+  gap: var(--hot-role-gap);
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'textContent imageContent'
+    'jobOthers jobOthers';
+  font-family: var(--default-font-bold);
+}
+
+.hot-role__text-content,
+.hot-role__image-content {
+  padding: var(--hot-role-padding);
+}
+
+.hot-role__text-content {
+  grid-area: textContent;
+  background-color: var(--main-color);
+  color: var(--main-bg);
+}
+
+.hot-role__text-content__type {
+  font-size: var(--hot-role-type-fs);
+  margin: 10px 0 40px;
+  line-height: 100%;
+}
+
+.hot-role__image-content {
+  position: relative;
+  grid-area: imageContent;
+  background-color: var(--highlight-color);
+  color: var(--highlight-negative);
+}
+
+.image-wrapper {
+  width: 100%;
+  border: solid 6px;
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.top-animated-notifier,
+.right-animated-notifier,
+.bottom-animated-notifier,
+.left-animated-notifier {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  font-family: var(--default-font-bold);
+  overflow: hidden;
+  font-size: var(--animated-text-fs);
+}
+
+.top-animated-notifier,
+.bottom-animated-notifier {
+  height: var(--hot-role-padding);
+  display: flex;
+  left: var(--hot-role-padding);
+  width: calc(100% - (var(--hot-role-padding) * 2));
+}
+
+.top-animated-notifier {
+  top: 0;
+}
+
+.bottom-animated-notifier {
+  bottom: 0;
+}
+
+.top-animated-notifier p,
+.bottom-animated-notifier p {
+  --moveTo: -200%;
+  position: relative;
+  animation: horizontal-notifier 4s linear infinite both;
+}
+
+.left-animated-notifier,
+.right-animated-notifier {
+  width: var(--hot-role-padding);
+  top: var(--hot-role-padding);
+  height: calc(100% - (var(--hot-role-padding) * 2));
+  writing-mode: vertical-lr;
+}
+
+.left-animated-notifier {
+  left: 0;
+}
+
+.right-animated-notifier {
+  right: 0;
+}
+
+.right-animated-notifier p,
+.left-animated-notifier p {
+  --moveTo: -200%;
+  position: relative;
+  animation: vertical-notifier 4s linear infinite both;
+}
+
+@keyframes horizontal-notifier {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: var(--moveTo);
+  }
+}
+
+@keyframes vertical-notifier {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: var(--moveTo);
+  }
+}
+
+.hot-role__other-details {
+  grid-area: jobOthers;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--hot-role-gap);
+}
+
+.hot-role__location,
+.hot-role__salary {
+  --btn-bg-color: var(--highlight-color);
+  --btn-color: var(--highlight-negative);
+  --btn-border-color: var(--highlight-color);
+}
+
+@media (max-width: 1330px) {
+  .hot-role {
+    --hot-role-type-fs: 2rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .hot-role {
+    --hot-role-type-fs: 1.5rem;
+  }
+
+  .info {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hot-role {
+    --hot-role-type-fs: 2rem;
+
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'textContent'
+      'jobOthers ';
+  }
+
+  .hot-role__image-content {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .hot-role {
+    --btn-fs: 0.9rem;
+  }
+}

@@ -1,0 +1,35 @@
+.btn-default {
+  /* --btn-color: var(--main-color);
+  --btn-border-color: var(--main-color);
+  --btn-bg-color: var(--main-bg);
+  --btn-fs: 1rem;
+  --btn-ff: var(--default-font-reg);
+  --btn-padding: 12px 30px;
+  --btn-border-radius: 100px; */
+
+  /* btn default */
+  --btn-default-color: var(--main-color);
+  --btn-default-border-color: var(--main-color);
+  --btn-default-bg-color: var(--main-bg);
+  --btn-default-fs: 1rem;
+  --btn-default-ff: inherit;
+  --btn-default-padding: 12px 30px;
+  --btn-default-border-radius: 100px;
+
+  position: relative;
+  padding: var(--btn-padding, var(--btn-default-padding));
+  font-size: var(--btn-fs, var(--btn-default-fs));
+  font-family: var(--btn-ff, var(--btn-default-ff));
+  border-radius: var(--btn-border-radius, var(--btn-default-border-radius));
+  background-color: var(--btn-bg-color, var(--btn-default-bg-color));
+  color: var(--btn-color, var(--btn-default-color));
+  border: solid 3px var(--btn-border-color, var(--btn-default-border-color));
+  cursor: pointer;
+  transition: color 0.5s, background-color 0.2s;
+}
+
+.btn-default:hover {
+  color: var(--btn-bg-color, var(--btn-default-bg-color));
+  background-color: var(--btn-color, var(--btn-default-color));
+  border-color: var(--btn-border-color, var(--btn-default-color));
+}

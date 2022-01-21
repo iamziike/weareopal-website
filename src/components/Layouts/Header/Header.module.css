@@ -1,0 +1,35 @@
+.header {
+  --header-descr-fs: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  gap: 50px;
+  padding: var(--default-padding-vertical) var(--default-padding-horizontal);
+}
+
+.header__hero-text {
+  color: var(--main-color2);
+}
+
+.header__descr {
+  width: 30ch;
+  font-size: var(--header-descr-fs);
+}
+
+.header__descr > * {
+  line-height: 170%;
+  background-color: var(--main-color2);
+  color: var(--main-bg);
+}
+
+@media (max-width: 900px) {
+  .header {
+    --header-descr-fs: 1.7rem;
+  }
+
+  .header__descr {
+    width: 100%;
+  }
+}

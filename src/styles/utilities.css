@@ -1,0 +1,20 @@
+.active,
+.focused-text {
+  color: var(--main-color2);
+  transition: color 1s;
+}
+
+.no-visible-scrollbar {
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* Internet-Explorer and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.no-visible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-radius-button {
+  --btn-border-radius: 0;
+  --btn-padding: calc(var(--hot-role-padding) / 2) 0;
+}

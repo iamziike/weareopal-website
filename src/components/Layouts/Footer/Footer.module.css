@@ -1,0 +1,33 @@
+.footer {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-end;
+  padding: var(--default-padding-horizontal);
+  padding-bottom: var(--default-padding-vertical);
+}
+
+.footer__second-child {
+  text-align: end;
+}
+
+.footer__second-child p:hover {
+  color: var(--main-color2);
+}
+
+.footer__second-child p {
+  transition: color 0.5s;
+}
+
+@media (max-width: 500px) {
+  .footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer__second-child {
+    text-align: center;
+    width: 100%;
+  }
+}

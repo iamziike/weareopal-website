@@ -1,0 +1,82 @@
+.latest-job {
+  --header-text-fs: 6rem;
+  --header-text-fs: 6rem;
+}
+
+.header-text {
+  white-space: pre;
+  flex-wrap: nowrap;
+  letter-spacing: 10px;
+  font-size: var(--header-text-fs);
+  font-family: var(--default-font-bold);
+  text-shadow: 0 2px var(--main-color), 2px 0 var(--main-color),
+    0 -2px var(--main-color), -2px 0 var(--main-color);
+  color: var(--main-bg);
+  text-align: center;
+  overflow: hidden;
+}
+
+.header-text p {
+  position: relative;
+  animation: moving-text 30s infinite linear both;
+}
+
+@media (max-width: 500px) {
+  .header-text p {
+    animation-duration: 3s;
+  }
+}
+
+@keyframes moving-text {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -200%;
+  }
+}
+
+.custom-swiper {
+  color: var(--main-bg);
+}
+
+.custom-swiper-slide {
+  display: grid;
+  gap: 5px;
+  text-align: center;
+  transition: opacity 1s;
+}
+
+.custom-swiper-slide:hover {
+  opacity: 1;
+}
+
+.custom-swiper-slide img {
+  max-width: 100%;
+  opacity: 0.5;
+}
+
+.title {
+  background-color: var(--main-color2);
+}
+
+.title,
+.cta > * {
+  padding: calc(var(--default-padding-vertical) / 2);
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.view-role {
+  --btn-color: var(--main-color);
+  --btn-bg-color: var(--main-bg);
+  --btn-border-color: var(--main-bg);
+}
+
+.apply {
+  color: var(--main-bg);
+  background-color: var(--main-color);
+}

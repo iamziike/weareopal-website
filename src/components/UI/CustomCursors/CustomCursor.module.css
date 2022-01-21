@@ -1,0 +1,19 @@
+.cursor {
+  --x: 50%;
+  --y: 50%;
+  --width: 8px;
+  --height: 8px;
+  --position-x: calc(var(--x) - (var(--width) / 2));
+  --position-y: calc(var(--y) - (var(--height) / 2));
+  position: fixed;
+  z-index: 100;
+  left: var(--position-x);
+  top: var(--position-y);
+  width: var(--width);
+  height: var(--height);
+  background-color: var(--cursor-color);
+  border-radius: 50%;
+  pointer-events: none;
+  transition: left, top;
+  mix-blend-mode: difference;
+}

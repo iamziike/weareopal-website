@@ -1,0 +1,23 @@
+* {
+  cursor: none;
+}
+
+*::selection {
+  background: var(--main-color2);
+  color: var(--main-bg);
+}
+
+body {
+  background-color: var(--main-bg);
+  color: var(--main-color);
+  font-family: var(--default-font-reg);
+  font-size: var(--fs-reg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--default-font-bold);
+}

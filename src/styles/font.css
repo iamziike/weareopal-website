@@ -1,0 +1,14 @@
+@font-face {
+  font-family: NeueMachina-Light;
+  src: url('../assets/fonts/Neue-Machina/NeueMachina-Light.otf');
+}
+
+@font-face {
+  font-family: NeueMachina-Regular;
+  src: url('../assets/fonts/Neue-Machina/NeueMachina-Regular.otf');
+}
+
+@font-face {
+  font-family: NeueMachina-Bold;
+  src: url('../assets/fonts/Neue-Machina/NeueMachina-Ultrabold.otf');
+}

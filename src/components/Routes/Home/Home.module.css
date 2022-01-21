@@ -1,0 +1,53 @@
+.home {
+  --fs-hero-text: 5.5rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+  height: 100vh;
+  padding: var(--default-padding-vertical) var(--default-padding-horizontal);
+  font-family: var(--default-font-bold);
+}
+
+.hero__header-text {
+  display: grid;
+  font-size: var(--fs-hero-text);
+  line-height: 100%;
+  text-shadow: 4px 4px 0 var(--main-bg), 4px 4px 0 var(--main-color);
+}
+
+.hero__header-text span:nth-child(2),
+.hero__motive {
+  color: var(--main-color2);
+}
+
+.hero__header-text span:nth-child(2)::after {
+  content: '*';
+  color: var(--main-color);
+}
+
+.hero__end-text {
+  display: flex;
+  gap: 10px;
+}
+
+.hero__motive {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 800px) {
+  .home {
+    --fs-hero-text: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero__end-text {
+    flex-direction: column;
+    gap: 0px;
+  }
+}

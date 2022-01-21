@@ -1,0 +1,22 @@
+.not-found {
+  --fs-404: 10rem;
+  display: grid;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-404);
+  text-shadow: 4px 4px 0 var(--main-bg), 6px 6px 0 var(--main-color2),
+    8px 8px 0 var(--main-color);
+}
+
+@media (max-width: 800px) {
+  .not-found {
+    --fs-404: 5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .not-found {
+    --fs-404: 3rem;
+  }
+}
