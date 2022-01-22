@@ -12,7 +12,7 @@ const headerData = {
       <a className={classes.highlight} href='https://weareopal.digital'>
         weareopal.digital's
       </a>{' '}
-      landing page, well it looks like like it, to some extent.
+      landing page, well it looks like it, to some extent.
       <br />I really loved their use of colors and just about everything. So I
       felt the need to build a look-alike.
       <br />
