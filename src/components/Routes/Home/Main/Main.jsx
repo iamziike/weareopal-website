@@ -60,6 +60,10 @@ const latestJobs = [
 ];
 
 const Main = () => {
+  const formSubmitHandler = (event) => {
+    event.preventDefault();
+  };
+
   const styledReviews = reviews.map((review, index) => (
     <div key={index} className={classes.review}>
       <p>{review.text}</p>
@@ -125,7 +129,9 @@ const Main = () => {
       {hotNewRoles.map((role) => (
         <HotRole key={role.id} {...role} />
       ))}
-      <LatestJobs jobList={latestJobs} />
+      <div className={classes['latest-jobs-wrappers']}>
+        <LatestJobs jobList={latestJobs} />
+      </div>
       <section className={classes['partners-list']}>
         <h2 className={classes['partners-list__header-text']}>Our Partners</h2>
         <p>
@@ -157,10 +163,13 @@ const Main = () => {
           </h3>
           <ListItemSwitcher duration={20000}>{styledReviews}</ListItemSwitcher>
         </div>
-        <form className={`${classes.form} no-radius-button`}>
+        <form
+          className={`${classes.form} no-radius-button`}
+          onSubmit={formSubmitHandler}
+        >
           <textarea placeholder='Can you help me find a dope candidate for a kick-ass role'></textarea>
-          <input type='text' />
-          <input type='email' />
+          <input type='text' placeholder='Name' />
+          <input type='email' placeholder='Email' />
           <Button>Send It</Button>
         </form>
       </div>

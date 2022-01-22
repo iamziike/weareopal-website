@@ -17,7 +17,14 @@ const Navbar = () => {
 
   const links = linksList.map((link) => (
     <li key={link.id} className={classes['nav__link']}>
-      <NavLink to={link.to}>{link.title.toUpperCase()}</NavLink>
+      <NavLink
+        to={link.to}
+        onClick={() => {
+          setIsOpen(false);
+        }}
+      >
+        {link.title.toUpperCase()}
+      </NavLink>
     </li>
   ));
 

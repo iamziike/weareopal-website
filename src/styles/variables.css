@@ -6,7 +6,7 @@
   --white: hsl(0, 0%, 100%);
   --gray: hsl(223, 19%, 71%);
   --dark-gray: hsl(223, 19%, 61%);
-  --red: hsl(0, 60%, 50%);
+  --red: hsl(0, 60%, 59%);
 
   /* themes sync */
   --main-bg: var(--black);

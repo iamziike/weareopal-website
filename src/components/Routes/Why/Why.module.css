@@ -1,3 +1,8 @@
 .highlight {
-  background-color: var(--alt-bg);
+  color: var(--main-color2);
+  transition: opacity 0.5s;
+}
+
+.highlight:hover {
+  opacity: 0.9;
 }
