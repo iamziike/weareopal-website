@@ -88,6 +88,9 @@ const ListItemSwitcher = ({ children, type = 'opacity', duration = 5000 }) => {
         return index === items.length ? 0 : index;
       });
     }, duration);
+    return () => {
+      clearInterval(timeoutHandler.current);
+    };
   }, [items.length, duration]);
 
   const index = indexVisible < 0 ? 0 : indexVisible;

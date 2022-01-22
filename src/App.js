@@ -10,6 +10,7 @@ import CustomCursor from './components/UI/CustomCursors/CustomCursor';
 
 const App = () => {
   const location = useLocation();
+
   return (
     <>
       <CustomCursor />

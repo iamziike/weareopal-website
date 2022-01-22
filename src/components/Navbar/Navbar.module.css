@@ -82,6 +82,8 @@
   }
 
   .nav__link {
+    width: max-content;
+    margin: 0 auto;
     text-shadow: 2px 2px 0 var(--main-bg), 2px 2px 0 var(--main-color);
   }
 

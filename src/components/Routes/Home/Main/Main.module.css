@@ -1,5 +1,4 @@
 .main {
-  /* --border-color: red; */
   --btn-ff: var(--default-font-bold);
   --main-gap: 5px;
 }
@@ -102,6 +101,17 @@
   }
 }
 
+@media (max-width: 500px) {
+  .about__intro {
+    --fs-medium: 2rem;
+    line-height: 120%;
+  }
+}
+
+.latest-jobs-wrappers {
+  margin: calc(var(--main-gap) * 2) 0;
+}
+
 /* Partners List */
 
 .partners-list {
@@ -199,8 +209,8 @@
 .form textarea {
   width: 100%;
   font-family: inherit;
-  padding: calc(var(--default-padding-vertical) * 2);
   resize: none;
+  padding: calc(var(--default-padding-vertical) * 2);
 }
 
 .form input,
@@ -210,7 +220,8 @@
 }
 
 .form input {
-  padding: var(--default-padding-vertical);
+  padding: var(--default-padding-vertical)
+    calc(var(--default-padding-vertical) * 2);
 }
 
 .form button {

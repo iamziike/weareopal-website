@@ -8,11 +8,11 @@ const headerData = {
   title: 'Why',
   descr: (
     <>
-      This is a redo of the landing page of{' '}
+      This is a redo of{' '}
       <a className={classes.highlight} href='https://weareopal.digital'>
         weareopal.digital
-      </a>
-      .
+      </a>{' '}
+      the landing page, well it looks like like it to some extent.
       <br />I really loved their use of colors and just about everything
       entirely so I felt the need to build a look-alike.
       <br />
