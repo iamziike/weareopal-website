@@ -40,7 +40,6 @@
 
 .nav__control {
   display: none;
-  cursor: pointer;
   padding: 10px;
   background-color: var(--main-color2);
   margin-left: auto;

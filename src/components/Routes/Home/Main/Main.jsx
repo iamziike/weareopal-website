@@ -56,7 +56,7 @@ const latestJobs = [
   { id: Math.random(), src: latestJobImage, title: 'UX Researcher' },
   { id: Math.random(), src: latestJobImage, title: 'Experince Designer' },
   { id: Math.random(), src: latestJobImage, title: 'Product Designer' },
-  { id: Math.random(), src: latestJobImage, title: 'Serice/OX Designer' },
+  { id: Math.random(), src: latestJobImage, title: 'Service/OX Designer' },
 ];
 
 const Main = () => {

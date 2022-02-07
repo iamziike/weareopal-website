@@ -1,12 +1,4 @@
 .btn-default {
-  /* --btn-color: var(--main-color);
-  --btn-border-color: var(--main-color);
-  --btn-bg-color: var(--main-bg);
-  --btn-fs: 1rem;
-  --btn-ff: var(--default-font-reg);
-  --btn-padding: 12px 30px;
-  --btn-border-radius: 100px; */
-
   /* btn default */
   --btn-default-color: var(--main-color);
   --btn-default-border-color: var(--main-color);
@@ -24,7 +16,6 @@
   background-color: var(--btn-bg-color, var(--btn-default-bg-color));
   color: var(--btn-color, var(--btn-default-color));
   border: solid 3px var(--btn-border-color, var(--btn-default-border-color));
-  cursor: pointer;
   transition: color 0.5s, background-color 0.2s;
 }
 
